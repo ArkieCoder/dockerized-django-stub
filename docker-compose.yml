@@ -2,7 +2,7 @@ version: '2'
 services:
   web:
     build: .
-    command: /bin/start.sh
+    command: /bin/start.sh ${DJ_APP}
     ports:
       - 8000:8000
     volumes:
