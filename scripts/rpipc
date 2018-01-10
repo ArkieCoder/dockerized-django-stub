@@ -1,0 +1,3 @@
+#!/bin/bash
+project=$1
+DJ_PRJ=$project docker-compose up

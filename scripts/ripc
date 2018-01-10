@@ -1,3 +1,10 @@
-#!/bin/sh
+#!/bin/bash 
 
-docker-compose exec web $@
+if [ "$1" == "b" ]
+then
+  shift
+  docker-compose exec web bash -c "$@"
+else
+  docker-compose exec web $@
+fi
+

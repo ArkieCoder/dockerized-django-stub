@@ -1,0 +1,9 @@
+#!/bin/bash
+project=$1
+shift
+
+echo "Running in [$project]"
+cmd="cd $project && python manage.py $@"
+echo "$cmd"
+
+scripts/ripc b "$cmd"
