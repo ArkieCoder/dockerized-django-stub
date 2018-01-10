@@ -9,3 +9,6 @@ DATABASES = {
 }
 
 ALLOWED_HOSTS = ['*']
+PROJECT_ROOT = BASE_DIR
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
+
