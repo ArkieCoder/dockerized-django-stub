@@ -3,8 +3,8 @@
 if [ "$1" == "b" ]
 then
   shift
-  docker-compose exec web bash -c "$@"
+  DJ_PRJ="" docker-compose exec web bash -c "$@"
 else
-  docker-compose exec web $@
+  DJ_PRJ="" docker-compose exec web $@
 fi
 
