@@ -2,7 +2,7 @@ FROM python:3.5.1
 
 ENV PYTHONUNBUFFERED 1
 
-RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client
+RUN apt-get update && apt-get install -y --no-install-recommends postgresql-client ruby
 RUN rm -rf /var/lib/apt/lists/*
 
 WORKDIR /code
